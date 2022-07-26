@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta chaset="UTF-8">
+    <title>simulator</title>
+    <link rel="stylesheet" href="nibun_newton.css">
+    <script src="./js/nylon.js"></script> 
+    <script src="./js/vcanvas.js"></script>
+    <script src="./js/nibun.js"></script>
+    <script src="./js/newton.js"></script>
+
+
+</head>
+<body>
+    <div id="contents">
+        <div id="panel">
+          <div>
+            <button type="button" id="start" class="normal">start</button>
+            <button type="button" id="stop" class="normal">stop</button>
+          </div>
+          <div>
+            <p>許容誤差</p>
+            <button type="button" id="b02" class="size">.0001</button>
+            <button type="button" id="b03" class="size">.0000001</button>
+            <button type="button" id="b04" class="size">.000000001</button>
+          </div>
+          <p id="theory"></p>
+          <p id="answer"></p>
+        </div>
+        <div id="main">
+          <div id="area1" class="area">
+            <p>　２分法</p>
+            <canvas class="myCanvas" id="graph1" width="460" height="460"></canvas>
+            <canvas class="myCanvas" id="graph1b" width="460" height="460"></canvas>
+          </div>
+  
+          <div id="area2" class="area">
+            <p>　ニュートン法</p>
+            <canvas class="myCanvas" id="graph2" width="460" height="460"></canvas>
+            <canvas class="myCanvas" id="graph2b" width="460" height="460"></canvas>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
